@@ -80,11 +80,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Nav bar menu for mobile
 
-// Mobile menu functionality
 function openNav() {
-  document.getElementById("navbar-mobile").classList.add("active");
+  document.querySelector('.mobileMenu').classList.add('active');
+  document.body.style.overflow = 'hidden'; // Prevent scrolling
 }
 
 function closeNav() {
-  document.getElementById("navbar-mobile").classList.remove("active");
+  document.querySelector('.mobileMenu').classList.remove('active');
+  document.body.style.overflow = ''; // Restore scrolling
 }
+
+// Close menu when clicking outside
+document.addEventListener('click', function(e) {
+  const mobileMenu = document.querySelector('.mobileMenu');
+  const openMenuBtn = document.querySelector('.openMenuBtn');
+  
+  if (mobileMenu.classList.contains('active') && 
+      !mobileMenu.contains(e.target) && 
+      e.target !== openMenuBtn) {
+    closeNav();
+  }
+});
+
+// Close menu when pressing Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeNav();
+  }
+});
