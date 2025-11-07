@@ -58,8 +58,8 @@ body {
 }
 
 .mobileMenu {
-  height: calc(100% - 40px);
-  width: calc(100% - 40px);
+  height: calc(100% - 50px);
+  width: calc(100% - 50px);
   position: fixed;
   z-index: 2;
   top: 20px;
