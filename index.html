@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="script.js"></script>
+    <title>Esc</title>
+</head>
+<body>
+    <div class="header">
+        <img src="images/logo.png" alt="logo">
+        <div class="site-title">Hacker Escape Rooms</div>
+        <span class="openMenuBtn" onclick="openNav()">&#9776;</span>
+        <nav id="navbar-mobile" class="mobileMenu">
+            <button class="closeMenuBtn" onclick="closeNav()">&times;</button>
+            <ul class="mobileMenuItems">
+                <li><a href="#">Play online</a></li>
+                <li><a href="#">Play on-site</a></li>
+                <li><a href="#">The story</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Play online</a></li>
+                <li><a href="#">Play on-site</a></li>
+                <li><a href="#">The story</a></li>
+                <li><a href="#" class="contactUs">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main class="main">
+        <div class="background-img">
+            <img src="images/img-0.png" alt="Escape Room">    
+            <div class="challenge-buttons">
+                <button class="button-red">Online challenges</button>
+                <button class="button-blue">On-site challenges</button>
+            </div>
+        </div>    
+        
+        <!-- Quotations Section - Desktop carousel -->
+        <div class="quotations">
+            <div class="quotes">
+                <img src="images/pic.png" alt="User's picture">
+                <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+                <small>John Doe, visited us in September 2021</small>
+            </div>
+            <div class="quotes">
+                <img src="./images/pic.png" alt="User's picture">
+                <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+                <small>John Doe, visited us in September 2021</small>
+            </div>
+        </div>
+
+        <!-- Mobile Quotations Carousel -->
+        <div class="quotations-mobile">
+            <div class="carousel-container">
+                <button class="carousel-arrow prev">‹</button>
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <div class="quotes">
+                            <img src="images/pic.png" alt="User's picture">
+                            <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+                            <small>John Doe, visited us in September 2021</small>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="quotes">
+                            <img src="images/pic.png" alt="User's picture">
+                            <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+                            <small>John Doe, visited us in September 2021</small>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-arrow next">›</button>
+                <div class="carousel-nav">
+                    <button class="carousel-dot active"></button>
+                    <button class="carousel-dot"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Challenge Rooms Section carousel -->
+        <h1>Popular Challenges right now</h1>
+        <div class="challenge-rooms">
+            <div class="room-card">
+                <img src="images/img-0.png" alt="Ancient Temple Room">
+                <div class="room-content">
+                    <h2>Title of room (on-site)</h2>
+                    <div class="rating-info">
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <span class="participants"><small>3-8 participants</small></span>
+                    </div>
+                    <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+                    <button class="card-room-button">Book this room</button>
+                </div>
+            </div>
+            <div class="room-card">
+                <img src="images/img-0.png" alt="Space Station Room">
+                <div class="room-content">
+                    <h2>Title of room (on-site)</h2>
+                    <div class="rating-info">
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <span class="participants"><small>2-5 participants</small></span>
+                    </div>
+                    <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+                    <button class="card-room-button">Book this room</button>
+                </div>
+            </div>
+            <div class="room-card">
+                <img src="images/img-0.png" alt="Wild West Room">
+                <div class="room-content">
+                    <h2>Title of room (on-site)</h2>
+                    <div class="rating-info">
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <span class="participants"><small>4-10 participants</small></span>
+                    </div>
+                    <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+                    <button class="card-room-button">Book this room</button>
+                </div>
+            </div>  
+        </div>
+
+        <!-- Mobile Challenge Rooms Carousel -->
+        <div class="challenge-rooms-mobile">
+            <div class="carousel-container">
+                <button class="carousel-arrow prev">‹</button>
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <div class="room-card">
+                            <img src="images/img-0.png" alt="Ancient Temple Room">
+                            <div class="room-content">
+                                <h2>Title of room (on-site)</h2>
+                                <div class="rating-info">
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <span class="participants"><small>3-8 participants</small></span>
+                                </div>
+                                <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+                                <button class="card-room-button">Book this room</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="room-card">
+                            <img src="images/img-0.png" alt="Space Station Room">
+                            <div class="room-content">
+                                <h2>Title of room (on-site)</h2>
+                                <div class="rating-info">
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <span class="participants"><small>2-5 participants</small></span>
+                                </div>
+                                <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+                                <button class="card-room-button">Book this room</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="room-card">
+                            <img src="images/img-0.png" alt="Wild West Room">
+                            <div class="room-content">
+                                <h2>Title of room (on-site)</h2>
+                                <div class="rating-info">
+                                    <div class="stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <span class="participants"><small>4-10 participants</small></span>
+                                </div>
+                                <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et</p>
+                                <button class="card-room-button">Book this room</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-arrow next">›</button>
+                <div class="carousel-nav">
+                    <button class="carousel-dot active"></button>
+                    <button class="carousel-dot"></button>
+                    <button class="carousel-dot"></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="challenge-buttons-01">
+            <button class="button-red-01">Online challenges</button>
+            <button class="button-blue-01">On-site challenges</button>
+        </div>
+        
+        <div class="full-story">
+            <p>
+                Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.
+            </p>
+            <button class="full-story-button">Read full story</button>
+        </div>
+        
+        <div class="contents-grid">
+            <div class="featured-card">
+                <div class="card-image">
+                    <img src="images/img-1.png" alt="Team Building">
+                </div>
+                <div class="card-content">
+                    <h3>Play with your friends or build your team stronger at work</h3>
+                    <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et.</p>
+                    <a href="#" class="btn">Book on-site today</a>
+                </div>
+            </div>
+            <div class="featured-card">
+                <div class="card-image">
+                    <img src="images/img-2.png" alt="Online Challenges">
+                </div>
+                <div class="card-content">
+                    <h3>Play online or visit our venue for one of our 25 escape rooms</h3>
+                    <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et.</p>
+                    <a href="#" class="btn">See online challenges</a>
+                </div>
+            </div>
+            <!-- Additional images added to check if float is working properly
+            <div class="featured-card">
+                <div class="card-image">
+                    <img src="images/cyber.jpg" alt="Online Challenges">
+                </div>
+                <div class="card-content">
+                    <h3>Play online or visit our venue for one of our 25 escape rooms</h3>
+                    <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et.</p>
+                    <a href="#" class="btn">See online challenges</a>
+                </div>
+            </div>
+            <div class="featured-card">
+                <div class="card-image">
+                    <img src="images/cyber2.jpg" alt="Online Challenges">
+                </div>
+                <div class="card-content">
+                    <h3>Play online or visit our venue for one of our 25 escape rooms</h3>
+                    <p>Praeterea, ex culpa non invenies unum aut non accusatis unum. Et nihil inuitam. Nemo nocere tibi erit, et non inimicos, et.</p>
+                    <a href="#" class="btn">See online challenges</a>
+                </div>
+            </div>
+            This section can be uncommented later if needed -->
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="brief-info">
+            <h4>[Esc] Hacker Escape Rooms</h4>
+            <small>Quodsi haberent magnalia inter potentiam et divitias, et non illam quidem haec eo spectant haec quoque vos omnino desit illud quo solo felicitatis libertatisque perficiuntur.</small>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="#">Site map</a></li>
+                <li><a href="#">The Story</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Legal</a></li><br>
+                <li><a href="#">Play online</a></li>
+                <li><a href="#">Play on-site</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <ul>
+                <li><a href="#">Follow us on</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+   
+</body>
+</html>
